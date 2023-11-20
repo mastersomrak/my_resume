@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styleresume.css">
+        <title>My Portfolio</title>
+    </head>
+    <body>
+        <!-- OVERLAY -->
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo" id="nav__logo">Hello World</a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><href="#" id="homeLink" class="nav__link">Home</li>
+                        <li class="nav__item"><href="#" id="showAboutFormBtn" onclick="scrollToSection()" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><href="#" onclick="scrollToService()" class="nav__link">Services</a></li>
+                        <li class="nav__item"><href="#"  id="showContactFormBtn" class="nav__link" onclick="scrollTocontact()">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </nav>
+        </header>
+        
+
+        <!-- MAIN -->
+        <main class="l-main bd-grid">
+            <div class="home">
+                <div class="home__information">
+                    <span class="home__pressent anime-text">Hello, My name is</span>
+                    <h1 class="home__title anime-text">Andrelle Fidel</h1>
+                    <span class="home__skill anime-text">Web Developer</span>
+
+                    <div>
+                        <a href="#" class="home__button anime-text" onclick= "openResume()" id="resume">Open resume</a>
+                    </div>
+                </div>
+
+                <div class="home__img">
+                    <img src="img.jpg" alt="">
+                </div>
+
+                <div class="home__social">
+                    <ion-icon  name="logo-facebook" class="home__social-icon" onclick="redirectToFacebook()"></ion-icon>
+                    <ion-icon name="logo-instagram" onclick="redirectToInsta()"  class="home__social-icon"></ion-icon>
+                    <ion-icon name="mail" onclick="redirectToGmail()" class="home__social-icon"></ion-icon>
+                </div>
+
+            </div>
+        <div id="resumeModal" class="resume-modal">
+        <div class="resume-modal-content">
+        <div class="container">
+        <div class="header">
+            <div class="image-area">
+                <img src="img.jpg" alt="Profile Image">
+                <div class="text-container">
+                    <h1>Andrelle Fidel</h1>
+                    
+                    <p id="profilehihi">As a dedicated and ambitious student pursuing a Bachelor of Sceince in Information Technology at Benguet State University, I bring a strong foundation in website development and a passion for programming. Demonstrated ability to HTML,CSS, and JAVASCRIPT, coupled with a commitment to continuous learning and professional growth. Eager to apply my academic knowledge and skills in a real-world setting, contributing to improvement of technology.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+        <div class="left">
+                <ul>
+                <h2>Personal Information</h2>
+                <p><strong>Name:</strong> Andrelle Fidel</p>
+                <p><strong>Age:</strong> 19</p>
+                <p><strong>Email:</strong> andrellefidel23@gmail.com</p>
+                <p><strong>Phone:</strong> 09663378097</p>
+            </ul><hr><hr>
+
+                <h2>Skills</h2>
+                <ul>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Python</p>
+                    <p>Javascript</p>
+                </ul><hr><hr>
+
+                <h2>Soft Skills</h2>
+                <ul>
+                    <p>Problem Solving</p>
+                    <p>Colaborate</p>
+                    <p>Time Management</p>
+                    <p>Creative</p>
+                </ul><hr><hr>
+                <ul>
+                <h2>Education</h2>
+                <p>High-School(graduate)</p>
+                <p>Sinipsip National High-Scholl main (2017-2022)</p>
+                <p>(HUMMS)</p>
+                <p>College(student)</p>
+                <p>Benguet State Univereity</p>
+                <p>(Bachelor of Science in Information Technology)</p>
+                </ul><hr><hr>
+                
+                <h2>Acheivement</h2>
+                <p>Graduated with honors, consistently maintaining a position on the Honor Roll.</p>
+                <p>Developed a project game (dots and boxes) using python</p>
+                
+                </ul><hr><hr>
+            </div>
+
+            <div class="right">
+                <h2>Stengths</h2>
+               
+                <ul id="pangalan">
+                    <p><strong>Innovative Problem Solver:</strong> <br>Known for approaching challenges with a creative mindset, finding unique solutions that others may not have considered.</p>
+                    <p><strong>Cultural Sensitivity: </strong><br>Adept at working in diverse environments, demonstrating cultural awareness and fostering inclusivity in the workplace.</p>
+                    <p><strong>Lifelong Learner:</strong> <br>Proactively seek opportunities for personal and professional development, showcasing a commitment to continuous learning and improvement.</p>
+                    <p><strong>Digital Savvy:</strong> <br>Stay abreast of the latest technological trends and possess a keen interest in leveraging emerging technologies to enhance efficiency and productivity.</p>
+                    <p><strong>Emotional Intelligence:</strong> <br>Possess a high level of emotional intelligence, enabling effective communication and the ability to navigate complex interpersonal dynamics.</p>
+                    <p><strong>Design Thinking:</strong> <br>Apply design thinking principles to projects, incorporating a user-centric approach to problem-solving and product development.</p>
+                </ul>
+                <hr><hr>
+
+                <h2>Experience</h2>
+                
+                <p>Collaborated with a school project team to develop and implement user-friendly web applications using HTML, CSS, and JavaScript.</p>
+                <p>Conducted thorough testing and troubleshooting to ensure optimal functionality and responsiveness of a project.</p>
+                <p>Assisted in the documentation of coding procedures and contributed to the development of an internal knowledge-sharing platform.</p>
+                <p>Participated in school project group meetings, providing insights into emerging industry trends and contributing to problem-solving discussions.</p>
+                <hr><hr>
+            </div>
+        </div>
+    </div>
+          <button class="resume-button" id="posbot" onclick="closeResume()">
+            Close
+          </button>
+        </div>
+      </div>
+        
+    
+<section id="sectionabout" >
+        <div id="page-wrapper">
+            <h1 id="aboutme">About Me</h1>
+        <div class="my-component-container">
+            <!-- Hobbies -->
+            <div class="my-component-item">
+                <img src="hobbies.jpg" alt="Hobbies">
+                <h3>Hobbies</h3>
+                <p>Playing Table Tennis and Basketball, reading, and outdoor activities.</p>
+            </div>
+
+            <!-- Humor/Personality -->
+            <div class="my-component-item">
+                <img src="persona.jpg" alt="Humor/Personality">
+                <h3>Humor/Personality</h3>
+                <p>Believe in the power of laughter and always maintain a positive outlook.</p>
+            </div>
+
+            <!-- Future Aspirations -->
+            <div class="my-component-item">
+                <img src="apirations.jpg" alt="Future Aspirations">
+                <h3>Future Aspirations</h3>
+                <p>Striving for continuous growth, learning, and making a positive impact in my field.</p>
+        </div>
+        </div>
+        </div>
+</section>
+
+
+
+<section id="sectionservices">
+    <h1 >Services</h1>
+    <div class="service-container">
+        
+    <div class="service-item">
+        <img src="web.jpg" alt="Web Design" class="service-image">
+        <h3 class="service-title">Web Design</h3>
+        <p class="service-description">Beautiful and user-friendly websites tailored to your business needs.Designs are modern, responsive, and optimized for a seamless user experience.</p>
+        <ion-icon name="desktop" class="service-icon"></ion-icon>
+
+    </div>
+
+    <div class="service-item">
+        <img src="graphic.jpg" alt="Graphic Design" class="service-image">
+        <h3 class="service-title">Graphic Design</h3>
+        <p class="service-description">Bring your brand to life with creative graphic design services. From logos to marketing materials, design visuals that make a lasting impression.</p>
+        <ion-icon name="brush" class="service-icon"></ion-icon>
+
+    </div>
+
+    <div class="service-item">
+        <img src="virtual.jpg" alt="Digital Marketing" class="service-image">
+        <h3 class="service-title">Virtual Assistance:</h3>
+        <p class="service-description">Provide virtual assistance services to help businesses with tasks like email management, scheduling, data entry, and customer support.</p>
+        <ion-icon name="globe" class="service-icon"></ion-icon>
+        
+    </div>
+    </div>
+</section>
+
+
+
+<section id="sectioncontact" >
+    <h1 >Contact</h1>
+    <div class="contact-form" id="contactShow">
+    <h1>Contact Me</h1>
+    <div class="container_contact">
+        <div class="main">
+            <div class="content">
+                <h2>Contact Me</h2>
+                <form action="#" method="post" id="contactForm">
+                    <input type="text" name="name" placeholder="Enter Your Name"required>
+                    <input type="email" name="name" placeholder="Enter Your Email"required>
+                    <textarea name="message" placeholder="Your Message"required></textarea>                   
+            <button  onclick="alert_send()" type="submit" class="btn-cancel" >Send <i class="fas fa-paper-plane"></i></button><br>
+            <button onclick="returnHome()" class= "btn-cancel">Cancel <i class="fas fa-paper-plane"></i></button>
+                </form>
+                </div>
+                <div class="form-img">
+                    <img src="contact.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Reach Me</h3>
+        <ul>
+        <li>Email: andrellefidel23@gmail.com</li>
+        <li>Phone: 09270625092</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#" id="homeLink" >Home</a></li>
+          <li><href="#" onclick="scrollToSection()">About Us</a></li>
+          <li><href="#" onclick="scrollToService()">Services</a></li>
+          <li><href="#" onclick="scrollTocontact()">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Me</h3>
+        <ul>
+          <li><a href="#" target="_blank" onclick="redirectToFacebook()">Facebook</a></li>
+          <li><a href="#" target="_blank" onclick="redirectToInsta()">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+     <div class="footer-bottom">
+        <ul>
+        <li>"Embrace the journey, empower the soul."</li>
+        <li>&copy; 2023 CareerForge.com, All rights reserved.</li>
+    </ul>
+    </div>
+  </footer>
+
+    </main>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- MAIN -->
+        <script src="script.js"></script>
+
+        <!-- ICONS -->
+        <script  type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    </body>
+</html>
